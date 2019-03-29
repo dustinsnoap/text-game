@@ -3,14 +3,16 @@ import authenticate from './components/authentication/authentication'
 import { createGlobalStyle } from "styled-components"
 import './reset.css'
 
-import Main from './components/main/main'
+// import Main from './components/main/main'
+import Scout from './components/actions/scout'
 
 class App extends Component {
   render() {
     return (
       <div>
         <GlobalStyle />
-        <Main />
+        {/* <Main /> */}
+        <Scout />
       </div>
     );
   }
