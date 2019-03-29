@@ -30,7 +30,7 @@ const Center = ({player}) => {
                     <span className='underline center'>Whore payout:</span>
                     <div className='row'>
                         <pre>%</pre>
-                        <input type='number' value={player.payout}/>
+                        <input type='number' readOnly value={player.payout}/>
                         <button>SET</button>
                     </div>
                     <span>Whore Happiness: {player.whoreHappiness}</span>
@@ -49,7 +49,7 @@ const Center = ({player}) => {
             <div className='row'>
                 <div className='assets'>
                     {player.assets.map(asset => 
-                        <React.Fragment>
+                        <React.Fragment key={asset.name}>
                             <span className='purple'>{asset.name}</span>
                             <pre>{asset.value}</pre>
                         </React.Fragment>
@@ -57,7 +57,7 @@ const Center = ({player}) => {
                 </div>
             </div>
             <div className='row'>
-                <button class='link'>Open Console</button>
+                <button className='link'>Open Console</button>
             </div>
         </CENTER>
     )
