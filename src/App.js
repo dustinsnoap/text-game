@@ -4,7 +4,8 @@ import { createGlobalStyle } from "styled-components"
 import './reset.css'
 
 // import Main from './components/main/main'
-import Scout from './components/actions/scout'
+// import Scout from './components/actions/scout'
+import Produce from './components/actions/produce'
 
 class App extends Component {
   render() {
@@ -12,7 +13,8 @@ class App extends Component {
       <div>
         <GlobalStyle />
         {/* <Main /> */}
-        <Scout />
+        {/* <Scout /> */}
+        <Produce />
       </div>
     );
   }
